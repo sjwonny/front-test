@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            color: blueviolet;
+            font-size: 50px;
+            font-weight: 900;
+        }
+    </style>
+    <body>
+        <h2>결과</h2>
+        <script>
+            //사용자에게 두 수를 입력 받고,
+            // 둘 중 더 큰 수를 출력하되
+            // 같으면 같다고 출력하기
+            let num1 = Number(prompt('정수1'));
+            let num2 = Number(prompt('정수2'));
+
+            document.write('<p>');
+            if (num1 > num2) {
+                document.write(num1);
+            } else if (num2 > num1) {
+                document.write(num2);
+            } else {
+                document.write('같다');
+            }
+
+            document.write('</p>');
+
+            document.write('<p>');
+            if (num1 > num2) {
+                document.write(num1);
+            } else {
+                if (num2 > num1) {
+                    document.write(num2);
+                } else {
+                    document.write('같다');
+                }
+            }
+            document.write('</p>');
+
+            // // 사용자에게 정수를 입력받고,
+            // let num = Number(prompt());
+            // // 정수가 짝수 라면
+            // // <p>짝수</p> 라고 출력,
+            // document.write('<p>');
+
+            // if (num % 2 == 0) {
+            //     document.write('짝수');
+            // } else {
+            //     document.write('홀수');
+            // }
+
+            // // if (num % 2 == 0) {
+            // //     document.write('짝수');
+            // // }
+            // // // 정수가 홀수라면
+            // // // <p>홀수</p> 라고 출력하기
+            // // if (num % 2 != 0) {
+            // //     document.write('홀수');
+            // // }
+            // document.write('</p>');
+        </script>
+    </body>
+</html>

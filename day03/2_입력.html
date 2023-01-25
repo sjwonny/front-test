@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>연산자 실습</h2>
+        <script>
+            // 사용자에게 나이를 입력받아서, 10년 20년 후 나이 출력하기
+            // let age = Number(prompt('나이를 입력해 주세요!'));
+            // // age = Number(age);
+            // document.write('<p>당신의 10년후 나이:' + (age + 10) + '살</p>');
+            // document.write('<p>당신의 20년후 나이:' + (age + 20) + '살</p>');
+
+            // 사용자에게 정수 하나를 입력 받아서 해당 정수를 10로 나눴을때 몫과 나머지 출력하기
+            // 25 --> 4로 나눴을 때 몫 : 6
+            //        4로 나눴을 때 나머지 : 1
+            // let num = Number(prompt('정수 입력!'));
+            // document.write('<p>4로 나눴을 때 몫 : ' + parseInt(num / 4) + '</p>');
+            // document.write('<p>4로 나눴을 때 나머지 : ' + (num % 4) + '</p>');
+
+            // 사용자에게 두자릿 수 정수를 입력 받아서
+            // 해당 정수의 십의자리와 일의자리 숫자 출력하기
+            // let num = Number(prompt('두자릿 수 입력!'));
+            // document.write('<p>십의자리 : ' + parseInt(num / 10) + ', 일의자리 : ' + (num % 10) + '</p>');
+
+            // 노래 한 곡당 300원인 코인노래방이 있다
+            // 사용자에게 금액을 입력받아서 부를 수 있는 노래 곡수와 잔돈을 출력하기
+            // 1600 --> 부를 수 있는 노래는 5곡, 잔돈 100원
+            //coin이라는 변수를 만들어서 그 저장공간에 사용자에게 입력받은 문자열값을 숫자값으로 바꿔서 대입해줘
+            // let coin = Number(prompt('금액 입력하시오!'));
+
+            // // price라는 변수를 만들어서 300이라는 값을 넣어주되 다른 값으로 변경 못하게 막아줘
+            // const price = 300;
+
+            // // songCnt라는 변수 만들어서 그 저장 공간에다
+            // // coin에들어있는값을 price에 들어있는 값으로 나눈 값을 정수로 바꾼 값을 넣어줘
+            // let songCnt = parseInt(coin / price);
+            // // 중간에 바뀌면 안되는 변수는 const를 사용
+            // // price = 500;
+
+            // //rest라는 변수를 만들어서 그 저장공간에다가
+            // //coin에 들어있는 값을 price에 들어있는 값으로 나눴을 때 나머지 값을 대입해줘
+            // let rest = coin % price;
+
+            // //html문서에다가 ----출력해줘
+            // document.write('<p>부를 수 있는 노래는 ' + songCnt + '곡, 잔돈 ' + rest + '원</p>');
+
+            // 사용자에게 국어점수, 영어점수, 수학점수를 입력 받아서
+            // 평균점수 출력하기
+            let kor = Number(prompt('국어점수 입력!'));
+            let eng = Number(prompt('영어점수 입력!'));
+            let math = Number(prompt('수학점수 입력!'));
+
+            let avg = (kor + eng + math) / 3;
+            document.write('평균 : ' + avg);
+        </script>
+    </body>
+</html>
